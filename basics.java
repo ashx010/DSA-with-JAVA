@@ -60,7 +60,59 @@ public class basics {
 
     System.out.println(l);
 
+    //conditional statement in java
+    if(j>10){
+      System.out.println("Ok");
+    }
+    else if (j==100){
+      System.out.println("Perfect");
+    }
+    else{
+      System.out.println("Not Ok");
+    }
+
+    //ternary operator
+    int m = (j==100) ? 1 : (j>10) ? 2 : 3; //if j is 100 then m=1, if j>10 then m=2, else m=3
+
+    //loops
+
+    //for loop
+    for(int el = 0; el<10; el++){
+      System.out.println(el);
+    }
+
+    //while loop
+    int el=0;
+    while(el<10){
+      System.out.println(el);
+      el++;
+    }
+
+    //do while loop
+    int el1 = 10;
+    do{
+      System.err.println(el);
+    }
+    while(el1<10); // here if even the condition is not true the loops iterate atleast 1 time
+
+    //switch case
+    System.out.println("Enter the option from menu: \na (10) \nb (20)");
+    char option = sc.next().charAt(0);
+
     sc.close();
+
+    switch (option) {
+      case 'a':
+        System.out.println(option + " is ok.");
+        break;
+      case 'b':
+        System.out.println(option + " is not ok.");
+        break;
+
+      default:
+        System.out.println("Good thats predicted.");
+        break;
+    }
 
 
   }
