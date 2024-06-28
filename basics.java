@@ -9,6 +9,10 @@ public class basics {
     System.out.println("Hello World inside function");
   }
 
+  public static int add(int a, int b){
+    return a+b;
+  }
+
   public static void main(String args[]){
 
     //print statement, ln refers to make new line just like \n
@@ -95,6 +99,12 @@ public class basics {
     }
     while(el1<10); // here if even the condition is not true the loops iterate atleast 1 time
 
+    //for-each loop
+    int arr[] = {1,2,3,4,5}; //basic array declaration for now
+    for (int rl : arr){
+      System.out.println(rl);
+    }
+
     //switch case
     System.out.println("Enter the option from menu: \na (10) \nb (20)");
     char option = sc.next().charAt(0);
@@ -114,6 +124,32 @@ public class basics {
         break;
     }
 
+    //array declarations
+    int arr1[] = new int[5]; // create an array filled with 0 initially 
+    int arr2[] = {1,2,3,4,5}; //create a pre-defined array
+
+    for (int df : arr1){
+      System.out.println(df);
+    }
+
+    for (int df : arr2){
+      System.out.println(df);
+    }
+
+    //2D array
+    int arr3[][] = new int[2][3]; //2 rows and 3 columns
+    int arr4[][] = {{1,2,3},{4,5,6}};
+
+    for (int row=0; row<2; row++){
+      for (int col=0; col<3; col++){
+        System.out.print(arr4[row][col] + " ");
+      }
+      System.out.println();
+    }
+
+    //functions
+    int result = add(10,20);
+    System.out.println(result);
 
   }
   
