@@ -78,9 +78,11 @@ public class basics {
     //ternary operator
     int m = (j==100) ? 1 : (j>10) ? 2 : 3; //if j is 100 then m=1, if j>10 then m=2, else m=3
 
+    System.out.println(m);
+
     //loops
 
-    //for loop
+    //for loops
     for(int el = 0; el<10; el++){
       System.out.println(el);
     }
