@@ -1,7 +1,7 @@
 # DSA-with-JAVA
 DSA with JAVA and JAVA syntax
 
-# Basics.java
+## Basics.java
 - Boiler plate
 - Print statement
 - Data types
@@ -23,9 +23,12 @@ DSA with JAVA and JAVA syntax
   - Declaration
   - Call
 
-# Searching.java
+## Searching.java
 - Linear Search
 - Binary Search
 
-# Sorting.java
+## Sorting.java
 - Bubble Sort
+
+### java1.java
+- Contain Raw code
