@@ -29,6 +29,9 @@ DSA with JAVA and JAVA syntax
 
 ## Sorting.java
 - Bubble Sort
+- Selection Sort
+- Insertion Sort
+- Inbuilt Sort
 
 ### java1.java
 - Contain Raw code
