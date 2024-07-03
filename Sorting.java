@@ -63,6 +63,31 @@ public class Sorting {
     return;
   }
 
+  //Counting Sort (used for positive and low quantity array)
+  public static void countingSortCustom(int arr[]){
+    int maxel = Integer.MIN_VALUE;
+    for (int i=0; i<arr.length; i++){
+      maxel = Math.max(arr[i], maxel);
+    }
+    int count[] = new int[maxel+1]; //in this we consider using 0 to maxel  
+    
+    for(int i=0; i<arr.length; i++){
+      count[arr[i]]++;
+    }
+
+    int j=0;
+    for(int i=0; i<count.length; i++){
+      while(count[i] > 0){
+        arr[j] = i;
+        j++;
+        count[i]--;
+      }
+    }
+
+    printArr(arr);
+    return;
+  }
+
   public static void main(String[] args) {
 
     int arr[] = {3,5,8,2,4,10,1};
@@ -91,7 +116,8 @@ public class Sorting {
     }
     System.out.println();
 
-    
+    int arr6[] = {3,5,8,2,4,10,1};
+    countingSortCustom(arr6); // ~~n  sometimes, n + range
   }
   
 }

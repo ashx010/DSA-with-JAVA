@@ -32,6 +32,7 @@ DSA with JAVA and JAVA syntax
 - Selection Sort
 - Insertion Sort
 - Inbuilt Sort
+- Counting Sort
 
 ### java1.java
 - Contain Raw code
